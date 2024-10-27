@@ -1,0 +1,14 @@
+É importante destacar que os comandos do Git que permitem modificar o histórico de commits devem ser utilizados 
+com prudência e apenas quando o commit em questão ainda não foi enviado ao repositório remoto, ou seja, quando ele 
+existe apenas no seu repositório local.
+
+Modificar um commit que já se tornou público, ou seja, aquele que já foi enviado ao GitHub ou a qualquer outro 
+repositório remoto, pode acarretar problemas consideráveis na colaboração com as outras pessoas e na integridade do 
+histórico de um projeto.
+
+Em situações de colaboração em equipe, é essencial manter a integridade do histórico de commits, pois qualquer 
+modificação em um commit que outras pessoas estejam trabalhando pode resultar em conflitos e dificuldades na colaboração.
+
+É recomendável evitar a modificação excessiva do histórico de commits, uma vez que isso pode tornar o histórico confuso.
+ O histórico deve ser uma representação precisa do progresso do projeto ao longo do tempo.
+

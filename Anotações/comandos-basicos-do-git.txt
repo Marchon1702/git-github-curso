@@ -1,0 +1,64 @@
+Vincular conta do github com sua máquina.
+git config --global user.name "Nome de usuário do Github"
+git config --global user.email "Email da sua conta no Github"
+
+Caso não tenha uma chave SSH configurada para seus commits faça uma com 
+esse guia: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Iniciar um repositório local com git.
+git init
+
+Adicionar arquivos para o commit.
+git add nome-do-arquivo
+
+Adicionar todos os arquivos daquele diretório.
+git add .
+
+Fazer commit das alterações.
+git commit -m "mensagem de commit"
+
+Iniciando repositório remoto no github com protocolo SSH.
+git remote add origin https://github.com/usuario/nome-do-repositorio.git
+
+Enviar commit para repositório remoto.
+git push nome-repositório(geralmente se chama origin) main
+
+Recuperar commits para repositório local.
+git pull nome-repositório main
+
+Para receber uma lista dos seus repositórios remotos.
+git remote -v
+
+Para remover um repositório remoto específico.
+git remote remove nome-repositório
+
+Alterar url de um repositório remoto.
+git remote set-url nome-repositório https://github.com/seu-usuario/seu-repositorio.git
+
+Alterar apelido(nome-repositório).
+git remote rename nome-repositório novo-nome-repositório
+
+Clonando um repositório.
+Na área code do repositório no github, copie a url e em seu terminal digite: git clone url
+
+Verificar alterações feitas e não "commitadas" em um projeto.
+git status
+
+Verificar histórico de commits
+git log
+
+Verificar repositórios remotos
+git remote
+
+Desfazer um commit 
+(Não apaga o commit em sí mas volta ao estado anterior que os arquivos estavam sem esse commit estar adicionado).
+git revert id-do-commit
+
+Apagar um commit 
+git reset --hard id-do-commit-anterior (anterior = versão que queremos voltar)
+
+Alterar o ultimo commit
+git commit --amend 
+
+Exemplo: Alterar a mensagem do commit (git commit --amend -m "nova mensagem") 
+Exemplo 2: Adicionar um arquivo que deixou de ser enviado (git commit --amend)
